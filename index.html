@@ -2,62 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Amaya's Quiz</title>
+    <title>quiz ting</title>
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <header>
-        <h1><span>What is Amaya's Favorite...</span></h1>
-    </header>
-    <section class="section1">
-        <div>
-            <h2 id="question-1">What is Amaya's Favorite Color</h2>
-        </div>
-        <div class="choices">
-        <div id="a1">
-            A. Purple
-        </div>
-        <div id="b1">
-            B. Blue
-        </div>
-        <div id="c1">
-            C. Copper
-        </div>
-        <div id="d1">
-            D. Red
-        </div>
-    </div>
+    <h2>Are you Ready?</h2>
+    <div id="timerDisplay"></div>
+    <input type="button" name="begin" value="Start" onclick="startTimer()">
 
-        <div id="button1">
-            Submit
+    <form name="quiz" id="quiz">
+       <div class="first">
+            <h2>What is Amaya's Favorite Animal?</h2>
+            <p><input type="radio" name="question1" value="Elephant"> A. Elephant</p>
+            <p><input type="radio" name="question1" value="Iguana"> B. Iguana</p>
+            <p><input type="radio" name="question1" value="Giraffe">C. Giraffe </p>
+            <p><input type="radio" name="question1" value="Rhino">D. Rhino </p>
+            <input type="button" id="btn" value="submit" onclick="check()">
         </div>
-    </section>
-    <section class="section2">
-        <div id="question2">
-            <h2>What is Amaya's Favorite Animal</h2>
-        </div>
-        <div id="a2">
-            A. Elephant
-        </div>
-        <div id="b2">
-            B. Iguana
-        </div>
-        <div id="c2">
-            C. Giraffe
-        </div>
-        <div id="d2">
-            D. Rhino
-        </div>
-        <div id="button2">
-            Submit
-        </div>
-    </section>
-    <section id="answers">
         
-    </section>
-    <footer>
-        Thanks for playing!
-    </footer>
+        
+        <div class="second">
+            <p>What is Amaya's Favorite Color?</p>
+            <p><input type="radio" name="question2" value="Purple">A. Purple</p>
+            <p><input type="radio" name="question2" value="Blue">B. Blue</p>
+            <p><input type="radio" name="question2" value="Copper">C. Copper</p>
+            <p><input type="radio" name="question2" value="Red">D. Red</p>
+        </div>
+    </form>
+    <input type="button" id="btn" value="submit" onclick="check2()">
+
+    <script src="./assets/java.js"></script>
 </body>
-<link rel="javascript" href="./assets/java.js">
 </html>
